@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuzzBloc - by Cotentin Web Studio</title>
+    <style>
+        :root {
+            --primary-color: #E65C00; /* Rappel du niveau Orange */
+            --secondary-color: #2C3E50;
+            --bg-color: #F9F9F9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+        }
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header img {
+            max-width: 280px;
+            height: auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ffffff, #eaeaea);
+        }
+        .hero h1 {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #555;
+            line-height: 1.6;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.1s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #CC5200;
+            transform: translateY(-2px);
+        }
+        .concept {
+            padding: 70px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .concept h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .levels {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px 80px 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card.vert { border-top: 6px solid #4CAF50; }
+        .card.jaune { border-top: 6px solid #FFC107; }
+        .card.orange { border-top: 6px solid var(--primary-color); }
+        
+        .card h3 { margin-top: 0; }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="puzzbloc_logo.png" alt="Logo PuzzBloc by Cotentin Web Studio">
+    </header>
+
+    <section class="hero">
+        <h1>Le Casse-Tête 3D à Imprimer</h1>
+        <p>Découvrez PuzzBloc, le puzzle géométrique 100% original. Emboîtez les pixels, formez le cube parfait, et relevez le défi d'ingénierie !</p>
+        <a href="#niveaux" class="btn">Découvrir les niveaux</a>
+    </section>
+
+    <section class="concept">
+        <h2>Le Concept</h2>
+        <p>Oubliez les puzzles classiques. PuzzBloc vous propose une expérience basée sur un système de "pixels" volumétriques. Chaque modèle offre une combinaison de languettes et d'encoches totalement inédite. Téléchargez nos fichiers STL, lancez votre imprimante 3D, et testez votre logique spatiale.</p>
+    </section>
+
+    <section id="niveaux" class="levels">
+        <div class="card vert">
+            <h3>Niveau 1 : Vert</h3>
+            <p>Idéal pour s'initier. Des formes simples pour assimiler la mécanique d'emboîtement à 6 faces.</p>
+        </div>
+        <div class="card jaune">
+            <h3>Niveau 2 : Jaune</h3>
+            <p>Le niveau intermédiaire. La complexité augmente, testez votre capacité de déduction.</p>
+        </div>
+        <div class="card orange">
+            <h3>Niveau 3 : Orange</h3>
+            <p>Le casse-tête avancé. Des asymétries et une architecture qui mettront vos nerfs à rude épreuve !</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cotentin Web Studio - Créé avec passion dans le Cotentin.</p>
+    </footer>
+
+</body>
+</html>
