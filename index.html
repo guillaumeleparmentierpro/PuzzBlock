@@ -6,9 +6,13 @@
     <title>PuzzBloc - by Cotentin Web Studio</title>
     <style>
         :root {
-            --primary-color: #E65C00; /* Rappel du niveau Orange */
+            --primary-color: #E65C00; 
             --secondary-color: #2C3E50;
             --bg-color: #F9F9F9;
+            --vert: #4CAF50;
+            --jaune: #FFC107;
+            --rouge: #e74c3c;
+            --violet: #9b59b6;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,7 +77,7 @@
             display: flex;
             justify-content: center;
             gap: 25px;
-            padding: 40px 20px 80px 20px;
+            padding: 40px 20px 40px 20px;
             flex-wrap: wrap;
         }
         .card {
@@ -88,11 +92,26 @@
         .card:hover {
             transform: translateY(-5px);
         }
-        .card.vert { border-top: 6px solid #4CAF50; }
-        .card.jaune { border-top: 6px solid #FFC107; }
+        .card.vert { border-top: 6px solid var(--vert); }
+        .card.jaune { border-top: 6px solid var(--jaune); }
         .card.orange { border-top: 6px solid var(--primary-color); }
+        .card.rouge { border-top: 6px solid var(--rouge); }
+        .card.violet { border-top: 6px solid var(--violet); }
         
         .card h3 { margin-top: 0; }
+
+        .pack-section {
+            background-color: #eee;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .price-tag {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
         
         footer {
             background-color: var(--secondary-color);
@@ -110,33 +129,49 @@
     </header>
 
     <section class="hero">
-        <h1>Le Casse-Tête 3D à Imprimer</h1>
-        <p>Découvrez PuzzBloc, le puzzle géométrique 100% original. Emboîtez les pixels, formez le cube parfait, et relevez le défi d'ingénierie !</p>
-        <a href="#niveaux" class="btn">Découvrir les niveaux</a>
+        <h1>Le Casse-Tête 3D Artisanal</h1>
+        <p>Découvrez PuzzBloc, le puzzle géométrique 100% original conçu dans le Cotentin. Relevez le défi d'ingénierie et domptez le cube !</p>
+        <a href="#niveaux" class="btn">Voir les modèles</a>
     </section>
 
     <section class="concept">
-        <h2>Le Concept</h2>
-        <p>Oubliez les puzzles classiques. PuzzBloc vous propose une expérience basée sur un système de "pixels" volumétriques. Chaque modèle offre une combinaison de languettes et d'encoches totalement inédite. Téléchargez nos fichiers STL, lancez votre imprimante 3D, et testez votre logique spatiale.</p>
+        <h2>L'Esprit PuzzBloc</h2>
+        <p>Oubliez les puzzles classiques. Chaque PuzzBloc est une pièce unique imprimée en 3D, basée sur un système de "pixels" volumétriques asymétriques. Imaginés avec la rigueur de l'air marin de Barfleur, nos modèles sont conçus pour durer et stimuler votre logique spatiale.</p>
+        <p><strong>Note de sécurité :</strong> Objet de logique et de collection destiné aux adultes et adolescents (14 ans et plus).</p>
     </section>
 
     <section id="niveaux" class="levels">
         <div class="card vert">
             <h3>Niveau 1 : Vert</h3>
-            <p>Idéal pour s'initier. Des formes simples pour assimiler la mécanique d'emboîtement à 6 faces.</p>
+            <p>L'initiation idéale pour comprendre la mécanique d'emboîtement.</p>
         </div>
         <div class="card jaune">
             <h3>Niveau 2 : Jaune</h3>
-            <p>Le niveau intermédiaire. La complexité augmente, testez votre capacité de déduction.</p>
+            <p>Le niveau intermédiaire. La complexité augmente avec des pièces monolithiques.</p>
         </div>
         <div class="card orange">
             <h3>Niveau 3 : Orange</h3>
-            <p>Le casse-tête avancé. Des asymétries et une architecture qui mettront vos nerfs à rude épreuve !</p>
+            <p>Le défi avancé. Des asymétries qui mettront vos nerfs à l'épreuve !</p>
+        </div>
+        <div class="card rouge">
+            <h3>Niveau 4 : Rouge</h3>
+            <p>Expert. Pour ceux qui maîtrisent parfaitement la géométrie 3D.</p>
+        </div>
+        <div class="card violet">
+            <h3>Niveau 5 : Violet</h3>
+            <p>Ultime. Le défi suprême de la gamme PuzzBloc.</p>
         </div>
     </section>
 
+    <section class="pack-section">
+        <h2>L'Offre Intégrale</h2>
+        <p>Profitez du pack complet comprenant les 5 niveaux de difficulté ainsi que son boîtier de rangement exclusif.</p>
+        <div class="price-tag">10 €</div>
+        <a href="mailto:contact@cotentinwebstudio.fr" class="btn">Commander mon Pack</a>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Cotentin Web Studio - Créé avec passion dans le Cotentin.</p>
+        <p>&copy; 2026 Cotentin Web Studio - Fabrication artisanale à Barfleur.</p>
     </footer>
 
 </body>
